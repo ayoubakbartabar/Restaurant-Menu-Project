@@ -28,13 +28,11 @@ All this—without downloading any app.
 ## 🛠️ Tech Stack
 
 This project is built with simplicity, speed, and responsiveness in mind:
-<p align="left" style="display: flex; align-items: center;">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML5" width="50" height="50" style="margin-right: 10px;"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS3" width="50" height="50" style="margin-right: 10px;"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="50" height="50" style="margin-right: 10px;"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/qr-code/qr-code-original.svg" alt="QR Code" width="50" height="50" style="margin-left: 10px;"/>
-</p>
 
+- ✅ **HTML5** – Semantic and SEO-friendly structure  
+- 🎨 **CSS3** – Clean, responsive design  
+- ⚙️ **Vanilla JavaScript** – Lightweight interactivity  
+- 📱 **QR Code integration** – Instant access per table
 
 ---
 
