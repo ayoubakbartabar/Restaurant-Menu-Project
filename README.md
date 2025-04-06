@@ -29,10 +29,22 @@ All this—without downloading any app.
 
 This project is built with simplicity, speed, and responsiveness in mind:
 
-- ✅ **HTML5** – Semantic and SEO-friendly structure  
-- 🎨 **CSS3** – Clean, responsive design  
-- ⚙️ **Vanilla JavaScript** – Lightweight interactivity  
-- 📱 **QR Code integration** – Instant access per table
+<p align="left">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML5" width="50" height="50" style="display: inline-block;"/>
+  <span>HTML5 – Semantic and SEO-friendly structure</span>
+</p>
+<p align="left">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS3" width="50" height="50" style="display: inline-block;"/>
+  <span>CSS3 – Clean, responsive design</span>
+</p>
+<p align="left">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="50" height="50" style="display: inline-block;"/>
+  <span>Vanilla JavaScript – Lightweight interactivity</span>
+</p>
+<p align="left">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/qr-code/qr-code-original.svg" alt="QR Code" width="50" height="50" style="display: inline-block;"/>
+</p>
+
 
 ---
 
