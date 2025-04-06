@@ -1,6 +1,5 @@
 ![Design preview for the Product list with cart coding challenge](./preview.jpg)
 
-## Welcome! 👋
 # 📖 A Story in Every Scan	
 
 **A fast, elegant, and hygienic solution for modern dining. Scan. Explore. Enjoy.**
@@ -8,7 +7,7 @@
 ---
 
 ## 📸 Live Preview
-
+[🔗 Click here for Live Demo]()
 ---
 
 ## 🚀 Project Overview
