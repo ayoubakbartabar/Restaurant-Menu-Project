@@ -185,7 +185,7 @@
  }
 
  .buying {
-     opacity: 0;
+     /* opacity: 0; */
      transition: opacity 0.3s ease-in-out;
  }
 
@@ -212,6 +212,21 @@
      font-weight: 500;
  }
 
+ .quantity-box {
+     width: 100%;
+     height: auto;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-around;
+ }
+.minus-btn , .plus-btn{
+    background-color: transparent;
+    padding: 0.2rem 0.5rem;
+    border: 2px solid var(--Red);
+    border-radius: 20px;
+    cursor: pointer;
+}
  .order-cart-container {
      border-radius: 10px;
      height: max-content;
