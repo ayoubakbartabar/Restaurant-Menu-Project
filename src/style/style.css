@@ -221,17 +221,21 @@
      justify-content: space-around;
 
  }
-.minus-btn , .plus-btn{
-    background-color: transparent;
-    padding: 0.2rem 0.5rem;
-    border: 2px solid #fff;
-    border-radius: 20px;
-    cursor: pointer;
-    color: #fff !important;
-}
-.input-count{
-    color: #fff !important;
-}
+
+ .minus-btn,
+ .plus-btn {
+     background-color: transparent;
+     padding: 0.2rem 0.5rem;
+     border: 2px solid #fff;
+     border-radius: 20px;
+     cursor: pointer;
+     color: #fff !important;
+ }
+
+ .input-count {
+     color: #fff !important;
+ }
+
  .order-cart-container {
      border-radius: 10px;
      height: max-content;
@@ -379,6 +383,8 @@
      background-color: hsl(13deg 37.24% 85.2%);
      justify-content: center;
      align-items: center;
+     flex-direction: row;
+     flex-wrap: wrap;
  }
 
  .bold-text {
