@@ -75,7 +75,6 @@ function addFoodFunc(
 }
 
 function createAddToCartButton(food, buyBtn, foodImgElem) {
-
   let addToCartBtn = document.createElement("button");
   addToCartBtn.classList.add("add-to-cart");
 
@@ -130,9 +129,9 @@ function createAddToCartButton(food, buyBtn, foodImgElem) {
         count
       );
     });
-    // ad event listener for minusBtn 
+    // ad event listener for minusBtn
     minusBtn.addEventListener("click", () => {
-      // set if problem 
+      // set if problem
       if (count > 0) {
         count--;
         countElem.textContent = count;
@@ -152,13 +151,12 @@ function createAddToCartButton(food, buyBtn, foodImgElem) {
         }
       }
     });
-
   });
 }
 
 // Updating the food list generation function to use the above logic
 function foodListGenerat(allFoodsArray) {
-  // create variable 
+  // create variable
   let foodBoxElem,
     thumbnailElem,
     foodImgElem,
@@ -167,11 +165,10 @@ function foodListGenerat(allFoodsArray) {
     categoryElem,
     nameElem,
     priceElem;
-
+  // set loop for array
   allFoodsArray.forEach(function (food) {
     foodBoxElem = document.createElement("div");
     foodBoxElem.className = "foods-box";
-
 
     thumbnailElem = document.createElement("div");
     thumbnailElem.className = "thumbnail";
@@ -276,7 +273,6 @@ function orderCartGenerator(foodList) {
   });
   foodsCountNumberElem.innerHTML = ` (${foodList.length})`;
 }
-
 
 // create function for remove item in order
 function removeOrderFunc(foodId) {
