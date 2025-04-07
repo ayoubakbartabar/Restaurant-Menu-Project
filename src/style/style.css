@@ -275,6 +275,9 @@
      .empty-text {
          margin-top: 30px;
          margin-bottom: 30px;
+         text-align: center;
+         text-wrap: wrap;
+         font-size: 100%;
      }
 
      display: none;
