@@ -158,6 +158,7 @@ function createAddToCartButton(food, buyBtn, foodImgElem) {
 
 // Updating the food list generation function to use the above logic
 function foodListGenerat(allFoodsArray) {
+  // create variable 
   let foodBoxElem,
     thumbnailElem,
     foodImgElem,
