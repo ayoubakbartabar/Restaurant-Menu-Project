@@ -219,13 +219,18 @@
      flex-direction: row;
      align-items: center;
      justify-content: space-around;
+
  }
 .minus-btn , .plus-btn{
     background-color: transparent;
     padding: 0.2rem 0.5rem;
-    border: 2px solid var(--Red);
+    border: 2px solid #fff;
     border-radius: 20px;
     cursor: pointer;
+    color: #fff !important;
+}
+.input-count{
+    color: #fff !important;
 }
  .order-cart-container {
      border-radius: 10px;
