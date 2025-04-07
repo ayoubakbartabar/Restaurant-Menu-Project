@@ -73,7 +73,7 @@ function addFoodFunc(
   setLocalStorage(addFoodsArray);
   emptyVersion(addFoodsArray);
 }
-function createAddToCartButton(food, buyBtn , foodImgElem) {
+function createAddToCartButton(food, buyBtn, foodImgElem) {
   let addToCartBtn = document.createElement("button");
   addToCartBtn.classList.add("add-to-cart");
 
@@ -87,12 +87,12 @@ function createAddToCartButton(food, buyBtn , foodImgElem) {
   addToCartBtn.append(buySvgElem, btnText);
   buyBtn.innerHTML = "";
   buyBtn.append(addToCartBtn);
-// create add Event Listener
+  // create add Event Listener
   addToCartBtn.addEventListener("click", function () {
     let count = 1;
 
-    foodImgElem.style.border = "2px solid hsl(14, 86%, 42%)"
-    
+    foodImgElem.style.border = "2px solid hsl(14, 86%, 42%)";
+
     let quantityBox = document.createElement("div");
     quantityBox.classList.add("quantity-box");
 
@@ -112,10 +112,9 @@ function createAddToCartButton(food, buyBtn , foodImgElem) {
     buyBtn.innerHTML = "";
     buyBtn.append(quantityBox);
 
-
     buyBtn.innerHTML = "";
     buyBtn.append(quantityBox);
-    buyBtn.style.backgroundColor = "hsl(14, 86%, 42%)"; 
+    buyBtn.style.backgroundColor = "hsl(14, 86%, 42%)";
 
     plusBtn.addEventListener("click", () => {
       count++;
@@ -182,7 +181,7 @@ function foodListGenerat(allFoodsArray) {
     buyBtn.className = "buying";
 
     // Initially show the Add to Cart button functionality
-    createAddToCartButton(food, buyBtn , foodImgElem);
+    createAddToCartButton(food, buyBtn, foodImgElem);
 
     detaileContainer = document.createElement("div");
     detaileContainer.className = "detaile";
@@ -205,7 +204,6 @@ function foodListGenerat(allFoodsArray) {
     foodsContainerElem.append(foodBoxElem);
   });
 }
-
 
 // create function for buy food btn
 function addFoodFunc(
@@ -377,14 +375,18 @@ function elementsStyleFunc(foodList) {
 function newStart() {
   // empty the array and call functions
   addFoodsArray = [];
+
   orderCartGenerator(addFoodsArray);
   orderCalcu(addFoodsArray);
   confirmOrderFunc(addFoodsArray);
   emptyVersion(addFoodsArray);
+
   // set new style
   orderConfirmElem.style.display = "none";
   foodsContainerStyleElem.style.opacity = "1";
   titleElem.style.opacity = "1";
+  // reloading
+  location.reload();
 }
 
 // add event listener
