@@ -562,37 +562,38 @@
          display: flex;
          flex-direction: column;
      }
+
      .order-confirm-container {
-        top: 10%;
-        padding: 20px 10px;
-    }
+         top: 10%;
+         padding: 20px 10px;
+     }
 
-    .form-header {
-        padding-left: 0;
-        align-items: center;
-        text-align: center;
-    }
+     .form-header {
+         padding-left: 0;
+         align-items: center;
+         text-align: center;
+     }
 
-    .confirmed-item {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+     .confirmed-item {
+         flex-direction: column;
+         align-items: flex-start;
+     }
 
-    .confirmed-detailes-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+     .confirmed-detailes-container {
+         flex-direction: column;
+         align-items: flex-start;
+     }
 
-    .order-total-container {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 5px;
-    }
+     .order-total-container {
+         flex-direction: column;
+         align-items: flex-start;
+         gap: 5px;
+     }
 
-    .new-order {
-        font-size: 16px;
-        padding: 12px;
-    }
+     .new-order {
+         font-size: 16px;
+         padding: 12px;
+     }
  }
 
  @media (max-width: 660px) {
