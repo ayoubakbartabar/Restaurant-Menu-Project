@@ -461,19 +461,36 @@
      border-radius: 10px;
  }
 
- .box-content {
-     width: 100%;
+ .order-confirm-container {
+     background-color: var(--Rose50);
+     width: 90%;
+     max-width: 500px;
+     margin: 0 auto;
      display: flex;
      flex-direction: column;
+     justify-content: flex-start;
+     border-radius: 15px;
+     position: fixed;
+     top: 20%;
+     left: 50%;
+     transform: translateX(-50%);
+     z-index: 99;
+     display: none;
+     padding: 15px;
+     max-height: 66vh;
+     overflow-y: scroll;
+ }
+
+ .order-confirm-container .content {
+     flex-grow: 1;
+     overflow-y: auto;
  }
 
  .confirmed-item {
-     width: 100%;
      display: flex;
+     flex-direction: row;
      justify-content: space-between;
-     border-bottom: 1px solid gray;
-     padding: 5px 0;
-     gap: 10px;
+     align-items: center;
  }
 
  .form-img {
