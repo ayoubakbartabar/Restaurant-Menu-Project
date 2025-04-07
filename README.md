@@ -7,7 +7,7 @@
 ---
 
 ## 📸 Live Preview
-[🔗 Click here for Live Demo]()
+[🔗 Click here for Live Demo](https://restaurant-menu-project.netlify.app/)
 
 ---
 
