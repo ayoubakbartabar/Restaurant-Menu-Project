@@ -88,9 +88,18 @@ function createAddToCartButton(food, buyBtn, foodImgElem) {
   addToCartBtn.append(buySvgElem, btnText);
   buyBtn.innerHTML = "";
   buyBtn.append(addToCartBtn);
+
   // create add Event Listener
   addToCartBtn.addEventListener("click", function () {
     let count = 1;
+    addFoodFunc(
+      food.id,
+      food.name,
+      food.image.desktop,
+      food.category,
+      food.price,
+      count
+    );
 
     foodImgElem.style.border = "2px solid hsl(14, 86%, 42%)";
 
