@@ -130,29 +130,29 @@ function createAddToCartButton(food, buyBtn, foodImgElem) {
         count
       );
     });
-
+    // ad event listener for minusBtn 
     minusBtn.addEventListener("click", () => {
-      if (count > 1) {
+      // set if problem 
+      if (count > 0) {
         count--;
         countElem.textContent = count;
-        addFoodFunc(
-          food.id,
-          food.name,
-          food.image.desktop,
-          food.category,
-          food.price,
-          count
-        );
+        if (count === 0) {
+          // call function
+          removeOrderFunc(food.id);
+        } else {
+          // call function
+          addFoodFunc(
+            food.id,
+            food.name,
+            food.image.desktop,
+            food.category,
+            food.price,
+            count
+          );
+        }
       }
     });
-    addFoodFunc(
-      food.id,
-      food.name,
-      food.image.desktop,
-      food.category,
-      food.price,
-      count
-    );
+
   });
 }
 
