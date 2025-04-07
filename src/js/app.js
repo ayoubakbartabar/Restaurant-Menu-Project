@@ -73,7 +73,9 @@ function addFoodFunc(
   setLocalStorage(addFoodsArray);
   emptyVersion(addFoodsArray);
 }
+
 function createAddToCartButton(food, buyBtn, foodImgElem) {
+
   let addToCartBtn = document.createElement("button");
   addToCartBtn.classList.add("add-to-cart");
 
@@ -143,7 +145,6 @@ function createAddToCartButton(food, buyBtn, foodImgElem) {
         );
       }
     });
-
     addFoodFunc(
       food.id,
       food.name,
@@ -169,6 +170,7 @@ function foodListGenerat(allFoodsArray) {
   allFoodsArray.forEach(function (food) {
     foodBoxElem = document.createElement("div");
     foodBoxElem.className = "foods-box";
+
 
     thumbnailElem = document.createElement("div");
     thumbnailElem.className = "thumbnail";
@@ -273,6 +275,7 @@ function orderCartGenerator(foodList) {
   });
   foodsCountNumberElem.innerHTML = ` (${foodList.length})`;
 }
+
 
 // create function for remove item in order
 function removeOrderFunc(foodId) {
