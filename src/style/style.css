@@ -492,7 +492,7 @@
      justify-content: space-between;
      align-items: center;
      padding-bottom: 1rem;
-     border-bottom: 1px solid;
+     border-bottom: 1px solid var(--Rose500);
      margin-top: 1rem;
  }
 
