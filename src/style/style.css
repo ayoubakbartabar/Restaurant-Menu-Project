@@ -160,6 +160,25 @@
      background-color: white;
  }
 
+ .add-to-cart {
+     border: 1px solid var(--Rose300);
+     border-radius: 50px;
+     cursor: pointer;
+     margin: 0 auto;
+     max-width: 120px;
+     width: 100%;
+     display: flex;
+     padding: 10px;
+     justify-content: center;
+     align-items: center;
+     flex-direction: row;
+     position: absolute;
+     bottom: 10px;
+     left: 50%;
+     transform: translate(-50%, 54%);
+     background-color: white;
+ }
+
  .thumbnail {
      position: relative;
      width: 100%;
