@@ -71,7 +71,7 @@ function addFoodFunc(
   setLocalStorage(addFoodsArray);
   emptyVersion(addFoodsArray);
 }
-function createAddToCartButton(food, buyBtn) {
+function createAddToCartButton(food, buyBtn , foodImgElem) {
   let addToCartBtn = document.createElement("button");
   addToCartBtn.classList.add("add-to-cart");
 
@@ -89,6 +89,8 @@ function createAddToCartButton(food, buyBtn) {
   addToCartBtn.addEventListener("click", function () {
     let count = 1;
 
+    foodImgElem.style.border = "2px solid hsl(14, 86%, 42%)"
+    
     let quantityBox = document.createElement("div");
     quantityBox.classList.add("quantity-box");
 
@@ -178,7 +180,7 @@ function foodListGenerat(allFoodsArray) {
     buyBtn.className = "buying";
 
     // Initially show the Add to Cart button functionality
-    createAddToCartButton(food, buyBtn);
+    createAddToCartButton(food, buyBtn , foodImgElem);
 
     detaileContainer = document.createElement("div");
     detaileContainer.className = "detaile";
