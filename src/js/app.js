@@ -1,3 +1,4 @@
+// create variable and get element
 let $ = document;
 let foodsContainerElem = $.querySelector(".foods-content");
 let cartContainerElem = $.querySelector(".cart-container");
