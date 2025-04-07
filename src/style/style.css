@@ -491,6 +491,9 @@
      flex-direction: row;
      justify-content: space-between;
      align-items: center;
+     padding-bottom: 1rem;
+     border-bottom: 1px solid;
+     margin-top: 1rem;
  }
 
  .form-img {
