@@ -394,6 +394,7 @@ function newStart() {
   orderConfirmElem.style.display = "none";
   foodsContainerStyleElem.style.opacity = "1";
   titleElem.style.opacity = "1";
+  
   // reloading
   location.reload();
 }
