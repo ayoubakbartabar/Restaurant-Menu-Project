@@ -37,6 +37,7 @@ function addFoodFunc(
   foodPrice,
   foodCount
 ) {
+  // create variable for Object
   let newFoodId = foodId;
   let newFoodName = foodName;
   let newFoodImage = foodImage;
