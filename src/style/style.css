@@ -409,50 +409,47 @@
 
  .order-confirm-container {
      background-color: var(--Rose50);
-     width: 32%;
-     margin-left: auto;
-     margin-right: auto;
+     width: 90%;
+     max-width: 500px;
+     margin: 0 auto;
      display: flex;
-     flex-wrap: wrap;
      flex-direction: column;
-     align-content: center;
      justify-content: center;
      border-radius: 15px;
-     position: absolute;
-     top: 30%;
+     position: fixed;
+     top: 20%;
+     left: 50%;
+     transform: translateX(-50%);
      z-index: 99;
      display: none;
+     padding: 15px;
  }
 
  .form-container {
      width: 100%;
      display: flex;
      flex-direction: column;
-     flex-wrap: wrap;
      justify-content: center;
      padding: 10px;
-     align-content: flex-start;
      align-items: center;
-
  }
 
  .form-header {
      width: 100%;
      display: flex;
      flex-direction: column;
-     flex-wrap: wrap;
-     padding-left: 15px;
+     padding-left: 10px;
      margin-bottom: 20px;
+ }
 
-     svg {
-         width: 35px;
-         margin-bottom: 10px;
-     }
+ .form-header svg {
+     width: 35px;
+     margin-bottom: 10px;
+ }
 
-     p {
-         color: #808080;
-         font-size: 12px;
-     }
+ .form-header p {
+     color: #808080;
+     font-size: 12px;
  }
 
  .form-box {
@@ -460,10 +457,6 @@
      padding: 10px;
      display: flex;
      flex-direction: column;
-     flex-wrap: wrap;
-     align-content: center;
-     justify-content: center;
-     align-items: center;
      background-color: var(--Rose100);
      border-radius: 10px;
  }
@@ -472,23 +465,15 @@
      width: 100%;
      display: flex;
      flex-direction: column;
-     flex-wrap: wrap;
-     align-content: center;
-     align-items: center;
-     justify-content: center;
  }
 
  .confirmed-item {
      width: 100%;
      display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     align-content: center;
      justify-content: space-between;
-     align-items: center;
      border-bottom: 1px solid gray;
-     padding-bottom: 5px;
-     padding-top: 5px;
+     padding: 5px 0;
+     gap: 10px;
  }
 
  .form-img {
@@ -498,23 +483,17 @@
 
  .confirmed-detailes-container {
      display: flex;
-     flex-direction: row;
      align-items: center;
-     flex-wrap: wrap;
      gap: 10px;
+     flex-wrap: wrap;
  }
 
- .confirmed-detailes {
-
-     .food-count {
-         color: var(--Red);
-         font-weight: 500;
-         font-size: 17px;
-         display: flex;
-         flex-direction: row;
-         flex-wrap: wrap;
-         gap: 20px;
-     }
+ .food-count {
+     color: var(--Red);
+     font-weight: 500;
+     font-size: 16px;
+     display: flex;
+     gap: 10px;
  }
 
  .food-price {
@@ -524,47 +503,40 @@
  .order-total-container {
      width: 100%;
      display: flex;
-     flex-wrap: wrap;
-     flex-direction: row;
      justify-content: space-between;
-     padding-bottom: 10px;
-     padding-top: 10px;
-     align-content: center;
-     align-items: center;
+     padding: 10px 0;
+ }
 
-     p {
-         font-weight: 800;
-         font-size: 17px;
-
-     }
+ .order-total-container p {
+     font-weight: 800;
+     font-size: 17px;
  }
 
  .start-new-order-container {
      width: 100%;
      display: flex;
      justify-content: center;
-     align-items: center;
      margin-top: 30px;
-     margin-bottom: 15px;
  }
 
  .new-order {
      width: 100%;
      padding: 15px;
      border-radius: 30px;
-     border: 0px;
+     border: none;
      background-color: var(--Red);
      color: #fff;
      font-size: 18px;
-     font-weight: 100;
      cursor: pointer;
  }
+
 
  @media (max-width: 1024px) {
      .foods-box {
          width: 50%;
      }
  }
+
 
  @media (max-width: 768px) {
      .foods-box {
@@ -590,6 +562,37 @@
          display: flex;
          flex-direction: column;
      }
+     .order-confirm-container {
+        top: 10%;
+        padding: 20px 10px;
+    }
+
+    .form-header {
+        padding-left: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .confirmed-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .confirmed-detailes-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .order-total-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .new-order {
+        font-size: 16px;
+        padding: 12px;
+    }
  }
 
  @media (max-width: 660px) {
