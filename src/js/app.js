@@ -146,6 +146,7 @@ function createAddToCartButton(food, buyBtn, foodImgElem) {
 
         if (count === 0) {
           removeOrderFunc(food.id);
+
           foodImgElem.style.border = "0px ";
           buyBtn.innerHTML = "";
 
@@ -309,6 +310,7 @@ function removeOrderFunc(foodId) {
   emptyVersion(addFoodsArray);
   orderCartGenerator(addFoodsArray);
   orderCalcu(addFoodsArray);
+
 }
 
 // create function for calculator order
