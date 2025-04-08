@@ -145,8 +145,6 @@ function createAddToCartButton(food, buyBtn, foodImgElem) {
         countElem.textContent = count;
 
         if (count === 0) {
-          removeOrderFunc(food.id);
-
           foodImgElem.style.border = "0px ";
           buyBtn.innerHTML = "";
 
@@ -165,6 +163,7 @@ function createAddToCartButton(food, buyBtn, foodImgElem) {
           buyBtn.style.backgroundColor = "";
 
           createAddToCartButton(food, buyBtn, foodImgElem);
+          removeOrderFunc(food.id);
         } else {
           addFoodFunc(
             food.id,
@@ -306,12 +305,10 @@ function removeOrderFunc(foodId) {
   addFoodsArray = addFoodsArray.filter((food) => {
     return food.id != foodId;
   });
-  
   // call functions
   emptyVersion(addFoodsArray);
   orderCartGenerator(addFoodsArray);
   orderCalcu(addFoodsArray);
-
 }
 
 // create function for calculator order
