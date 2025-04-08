@@ -138,16 +138,14 @@ function createAddToCartButton(food, buyBtn, foodImgElem) {
         count
       );
     });
-//
+
     minusBtn.addEventListener("click", () => {
       if (count > 0) {
         count--;
         countElem.textContent = count;
 
         if (count === 0) {
-
           removeOrderFunc(food.id);
-
 
           buyBtn.innerHTML = "";
 
@@ -163,11 +161,9 @@ function createAddToCartButton(food, buyBtn, foodImgElem) {
 
           newAddToCartBtn.append(newBuySvgElem, newBtnText);
           buyBtn.append(newAddToCartBtn);
-          buyBtn.style.backgroundColor = ""; 
+          buyBtn.style.backgroundColor = "";
 
-          newAddToCartBtn.addEventListener("click", () => {
-            createAddToCartButton(food, buyBtn, foodImgElem);
-          });
+          createAddToCartButton(food, buyBtn, foodImgElem);
         } else {
           addFoodFunc(
             food.id,
