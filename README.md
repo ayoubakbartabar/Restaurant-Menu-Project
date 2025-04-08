@@ -3,9 +3,6 @@
 # 📖 A Story in Every Scan	
 
 **A fast, elegant, and hygienic solution for modern dining. Scan. Explore. Enjoy.**
-
----
-
 ## 📸 Live Preview
 [🔗 Click here for Live Demo](https://restaurant-menu-project.netlify.app/)
 
