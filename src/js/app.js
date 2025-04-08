@@ -138,7 +138,7 @@ function createAddToCartButton(food, buyBtn, foodImgElem) {
         count
       );
     });
-
+//
     minusBtn.addEventListener("click", () => {
       if (count > 0) {
         count--;
