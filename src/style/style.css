@@ -148,7 +148,6 @@
      max-width: 120px;
      width: 100%;
      display: flex;
-     padding: 10px;
      justify-content: center;
      align-items: center;
      flex-direction: row-reverse;
@@ -167,7 +166,7 @@
      max-width: 160px;
      width: 100%;
      display: flex;
-     padding: 0px;
+     padding: 10px;
      justify-content: center;
      align-items: center;
      flex-direction: row;
@@ -216,7 +215,7 @@
      flex-direction: row;
      align-items: center;
      justify-content: space-around;
-
+     padding: 10px;
  }
 
  .minus-btn,
