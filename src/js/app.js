@@ -146,7 +146,7 @@ function createAddToCartButton(food, buyBtn, foodImgElem) {
 
         if (count === 0) {
           removeOrderFunc(food.id);
-
+          foodImgElem.style.border = "0px ";
           buyBtn.innerHTML = "";
 
           let newAddToCartBtn = document.createElement("button");
