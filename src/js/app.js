@@ -305,11 +305,13 @@ function removeOrderFunc(foodId) {
   addFoodsArray = addFoodsArray.filter((food) => {
     return food.id != foodId;
   });
+  
   // call functions
   emptyVersion(addFoodsArray);
   orderCartGenerator(addFoodsArray);
   orderCalcu(addFoodsArray);
 }
+
 
 // create function for calculator order
 function orderCalcu(foodList) {
